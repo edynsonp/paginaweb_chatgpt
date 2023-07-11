@@ -1,34 +1,153 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mi página web</title>
+  <title>Portafolio Personal</title>
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      
+    }
+    
+    header {
+      background-color: #060606;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    
+    main {
+      padding: 20px;
+    }
+    
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+    }
+    
+    h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      margin: 0 0 20px;
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    /* Estilos para habilidades y proyectos destacados */
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    
+    /* Estilos para la sección de habilidades */
+    section ul {
+      list-style-type: square;
+    }
+    
+    /* Estilos para la sección de proyectos destacados */
+    section ul li {
+      margin-bottom: 10px;
+    }
+    
+    /* Estilos para secciones con colores */
+    .section-color-1 {
+      background-color: #71b6fa;
+      color: #fff;
+    }
+    
+    .section-color-2 {
+      background-color: #1769f7;
+      color: #fff;
+    }
+    
+    .section-color-3 {
+      background-color: #3406ff;
+      color: #fff;
+    }
+    /* Estilos para la imagen de la cabecera */
+    .header-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50px;
+
+    }
+     
+  </style>
+  <script>
+    function toggleContent() {
+      var content = document.getElementById('bio-content');
+      var toggleButton = document.getElementById('toggle-button');
+      
+      if (content.classList.contains('expanded')) {
+        content.classList.remove('expanded');
+        toggleButton.innerText = 'Leer más';
+      } else {
+        content.classList.add('expanded');
+        toggleButton.innerText = 'Leer menos';
+      }
+    }
+  </script>
 </head>
 <body>
   <header>
-    <h1>Bienvenido a mi página web</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
+    <img src=   "https://img.freepik.com/premium-photo/global-technologies-data-world-map-banner-background
+                -3d-computer-network-covering-planet_90380-4558.jpg?size=626&ext=jpg&ga=GA1.1.1426664931.1689048301&semt=ais"
+                alt="Imagen de cabecera" class="header-image">
+    <h1>Edynson Pinzón</h1>
   </header>
   
   <main>
-    <section>
-      <h2>Acerca de mí</h2>
-      <p>Hola, soy [Tu nombre]. Bienvenido a mi página web.</p>
+    <section class="section-color-1">
+      <h2>Biografía</h2>
+      <p id="bio-content">  Soy Edynson Pinzón, un apasionado estudiante de Ingeniería de
+                            Software en busca de oportunidades para desarrollarme profesionalmente
+                            en el campo de la programación. Con sólidos conocimientos en lenguajes
+                            como Python, Java, HTML, CSS y experiencia en el uso de plataformas
+                            como WordPress, tengo la capacidad de crear soluciones tecnológicas
+                            innovadoras y eficientes.</p>
+      
+      
+    </section>
     </section>
     
-    <section>
-      <h2>Contacto</h2>
-      <p>Puedes contactarme a través de correo electrónico: [correo electrónico] o por teléfono: [número de teléfono].</p>
+    <section class="section-color-2">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>WordPress</li>
+      </ul>
+    </section>
+    
+    <section class="section-color-3">
+      <h2>Proyectos Destacados</h2>
+      <ul>
+        <li>Proyecto 1</li>
+        <li>Proyecto 2</li>
+        <li>Proyecto 3</li>
+      </ul>
     </section>
   </main>
   
   <footer>
-    <p>Derechos de autor &copy; 2023 Mi página web. Todos los derechos reservados.</p>
+    <p>&copy; 2023 Edynson Pinzón - Portafolio Personal</p>
   </footer>
 </body>
 </html>
